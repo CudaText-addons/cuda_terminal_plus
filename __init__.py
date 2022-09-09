@@ -269,6 +269,7 @@ class Terminal:
         self.memo = Editor(dlg_proc(self.h_dlg, DLG_CTL_HANDLE, index=n))
 
         self.memo.set_prop(PROP_RO, True)
+        self.memo.set_prop(PROP_UNDO_LIMIT, 0) # Undo gives markers leaks
         self.memo.set_prop(PROP_CARET_VIRTUAL, False)
         self.memo.set_prop(PROP_GUTTER_ALL, False)
         self.memo.set_prop(PROP_UNPRINTED_SHOW, False)
