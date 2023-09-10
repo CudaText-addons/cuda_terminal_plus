@@ -1,5 +1,5 @@
 [info]
-title=Terminal+
+title=Terminal Plus
 desc=Shows "Terminal" panel(s) in the bottom panel of CudaText. Mimics many features from "Terminal-Plus" package of Atom editor.
 type=cudatext-plugin
 subdir=cuda_terminal_plus
@@ -11,76 +11,76 @@ events=on_exit,on_state~,on_tab_change~,on_tab_move~,on_snippet~
 
 [item2]
 section=commands
-caption=Terminal+\Open
+caption=Terminal Plus\Open
 method=open
 [item3]
 section=commands
-caption=Terminal+\Add terminal for user home directory
+caption=Terminal Plus\Add terminal for user home directory
 method=cmd_new_term_nofile
 [item4]
 section=commands
-caption=Terminal+\Add terminal (for current file)
+caption=Terminal Plus\Add terminal (for current file)
 method=cmd_new_term
 [item5]
 section=commands
-caption=Terminal+\Rename terminal...
+caption=Terminal Plus\Rename terminal...
 method=on_statusbar_cell_rename
 [item6]
 section=commands
-caption=Terminal+\Close terminal
+caption=Terminal Plus\Close terminal
 method=cmd_close_cur_term
 
 
 [item10]
 section=commands
-caption=Terminal+\-
+caption=Terminal Plus\-
 method=_
 [item11]
 section=commands
-caption=Terminal+\Focus next terminal
+caption=Terminal Plus\Focus next terminal
 method=cmd_next
 [item12]
 section=commands
-caption=Terminal+\Focus previous terminal
+caption=Terminal Plus\Focus previous terminal
 method=cmd_previous
 
 
 [item20]
 section=commands
-caption=Terminal+\-
+caption=Terminal Plus\-
 method=_
 [item21]
 section=commands
-caption=Terminal+\Execute selected text in terminal
+caption=Terminal Plus\Execute selected text in terminal
 method=cmd_exec_selected
 [item22]
 section=commands
-caption=Terminal+\Repeat last terminal command
+caption=Terminal Plus\Repeat last terminal command
 method=cmd_repeat_last
 [item23]
 section=commands
-caption=Terminal+\Toggle focus: editor - its terminal
+caption=Terminal Plus\Toggle focus: editor - its terminal
 method=cmd_cur_file_term_switch
 [item24]
 section=commands
-caption=Terminal+\Search for command in history
+caption=Terminal Plus\Search for command in history
 method=recall_cmd
 [item25]
 section=commands
-caption=Terminal+\Close last terminal for current file
+caption=Terminal Plus\Close last terminal for current file
 method=cmd_close_last_cur
 [item26]
 section=commands
-caption=Terminal+\Close all terminals...
+caption=Terminal Plus\Close all terminals...
 method=close_all_terms_dlg
 
 [item60]
 section=commands
-caption=Terminal+\Config
+caption=Terminal Plus\Config
 method=config
 menu=o
 
 [bottombar1]
-hint=Terminal+
+hint=Terminal Plus
 icon={dir}/terminal.png
 method=open
