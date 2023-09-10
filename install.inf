@@ -3,8 +3,7 @@ title=Terminal+
 desc=Shows "Terminal" panel(s) in the bottom panel of CudaText. Mimics many features from "Terminal-Plus" package of Atom editor.
 type=cudatext-plugin
 subdir=cuda_terminal_plus
-homepage=https://github.com/halfbrained/cuda_terminal_plus
-api=1.0.369
+homepage=https://github.com/CudaText-addons/cuda_terminal_plus
 
 [item1]
 section=events
