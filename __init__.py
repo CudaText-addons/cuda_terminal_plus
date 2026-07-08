@@ -1590,7 +1590,7 @@ class Command:
     def update_output(self):
         full_text, range_lists = self.parse_ansi_lines()
 
-        h_pos = self.memo.get_prop(PROP_SCROLL_HORZ)  if LOCK_H_SCROLL else  None
+        h_pos = self.memo.get_prop(PROP_SCROLL_HORZ_INFO)['pos']  if LOCK_H_SCROLL else  None
 
         self.memo.set_prop(PROP_RO, False)
         self.memo.set_text_all(full_text)
@@ -1600,7 +1600,7 @@ class Command:
         self.memo.cmd(cmds.cCommand_GotoTextEnd)
         self.memo.set_prop(PROP_LINE_TOP, self.memo.get_line_count()-3)
         if h_pos is not None:
-            h_pos = self.memo.set_prop(PROP_SCROLL_HORZ, h_pos)
+            h_pos = self.memo.set_prop(PROP_SCROLL_HORZ_INFO, {'pos': h_pos})
 
     def apply_colors(self, range_lists):
         # range_lists - map: (fg,bg,isbold) -> (xs,ys,lens)
